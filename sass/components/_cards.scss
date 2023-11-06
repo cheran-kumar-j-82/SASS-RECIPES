@@ -1,0 +1,23 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as mx;
+.card{
+    height: v.$card-height;
+    width: v.$card-width;
+    border-radius: v.$card-border-radius;
+    background-color: v.$card-background-color;
+    box-shadow:$card-box-shadow;
+    transition: 0.2s linear;
+    cursor: pointer;
+    .content{
+        padding-left: 20px;
+        padding-top: 30px;
+    }
+    &:hover{
+        @include mx.transform(Y,-10);
+        // @include mx.transform(null,-10);
+
+    }
+    &:hover>.foodpng{
+        @include mx.rotate(null,30)
+    }
+}

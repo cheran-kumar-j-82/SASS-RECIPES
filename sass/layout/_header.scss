@@ -1,0 +1,24 @@
+@use '../abstracts/variables' as v;
+
+header{
+    height: v.$header-height;
+    background-color: v.$header-background-color;
+    nav{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        padding-top: 11px !important;
+        flex-wrap: wrap;
+        ul{
+            display: flex;
+            justify-content:flex-end;
+            gap: v.$gap;
+            margin-right: 40px;
+            padding-top: 12px;
+            flex-wrap: wrap;
+        }
+        h2{
+            margin-left: 40px;
+        }
+    }
+}

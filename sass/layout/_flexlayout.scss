@@ -1,0 +1,7 @@
+@use '../abstracts/mixins' as dis;
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}

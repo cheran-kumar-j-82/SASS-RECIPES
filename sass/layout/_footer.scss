@@ -1,0 +1,20 @@
+@use '../abstracts/variables' as v;
+
+footer{
+    height: v.$footer-height;
+    width: v.$footer-width;
+    background-color: v.$footer-background-color;
+    .menus{
+        height: inherit;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .cont a{
+        display: block;
+        color: v.$a-color;
+        text-decoration: none;
+        margin-bottom: 10px;
+    }
+}
+

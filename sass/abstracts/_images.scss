@@ -1,0 +1,10 @@
+@use '../abstracts/variables' as v;
+
+.foodpng{
+    height: v.$img-height;
+    width: v.$img-width;
+    position: relative;
+    left: 230px;
+    top: -95px;
+    transition: 0.4s linear;
+}

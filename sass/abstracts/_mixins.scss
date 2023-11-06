@@ -1,0 +1,24 @@
+//Transform Properties Mixins
+
+@mixin transform($dir,$val){
+    @if $dir==null {
+        transform: translate($val+px);
+    }@else{
+        transform:translate#{$dir}($val+px);
+    }
+}
+@mixin rotate($dir,$val){
+    @if $dir==null {
+        transform: rotate($val+deg);
+    }@else{
+        transform:rotate#{$dir}($val+deg);
+    }
+}
+
+
+//Display Property Mixins
+@mixin display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,6 @@
+@use '../abstracts/mixins' as dis;
+
+.container{
+    @include dis.display;
+    margin-bottom: 10px;
+}
